@@ -1,12 +1,2 @@
-// Connect to the MongoDB server
-const conn = new Mongo();
-
-// Get the admin database
-const adminDB = conn.getDB('admin');
-
 // List all databases
-const databases = adminDB.runCommand({ listDatabases: 1 });
-
-// Print the list of databases
-printjson(databases);
-
+show databases
